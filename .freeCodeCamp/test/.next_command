@@ -274,3 +274,4 @@ ls --color=auto -l reset.sh
 more reset.sh
 cd
 psql --username=freecodecamp --dbname=postgres
+./student_info.sh
