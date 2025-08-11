@@ -263,3 +263,14 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 ls --color=auto
 ls --color=auto -l
 chmod +x student_info.sh
+psql --username=freecodecamp --dbname=postgres
+ls --color=auto .freecodecamp
+ls --color=auto -la
+cd .freeCodeCamp/
+ls --color=auto
+ls --color=auto -la
+npm install
+ls --color=auto -l reset.sh
+more reset.sh
+cd
+psql --username=freecodecamp --dbname=postgres
