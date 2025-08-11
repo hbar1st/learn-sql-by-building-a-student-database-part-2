@@ -142,3 +142,4 @@ git status
 git pull origin master
 ls --color=auto
 psql -U postgres < students.sql
+touch student_info.sh
