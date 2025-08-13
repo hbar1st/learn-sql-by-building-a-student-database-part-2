@@ -448,3 +448,4 @@ psql -h
 psql --help
 ls --color=auto
 ./student_info.sh
+./student_info.sh
