@@ -47,3 +47,5 @@ echo -e "\nList of unique courses, in reverse alphabetical order, that no studen
 echo "$($PSQL "select distinct(c.course) from courses as c full join majors_courses using(course_id) full join courses using(course_id) left join students as s using(major_id) where s.student_id is null or (first_name='Obie' and last_name='Hilpert') order by c.course desc")"
 
 echo -e "\nList of courses, in alphabetical order, with only one student enrolled:"
+
+echo "$($PSQL "select c.course from courses as c full join majors_courses using(course_id) full join courses using(course_id) left join students as s using(major_id) group by c.course having count(s.student_id) = 1 order by c.course asc")"
